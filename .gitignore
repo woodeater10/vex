@@ -1,7 +1,0 @@
-vex
-*.o
-*.d
-*.swp
-*~
-.cache/
-tags
