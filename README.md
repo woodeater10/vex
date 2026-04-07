@@ -1,6 +1,8 @@
 # vex
 
-Minimal BSP/dwindle tiling window manager for X11. Each new window bisects the focused tile, alternating split orientation based on aspect ratio — matching Hyprland's dwindle behavior. Windows can be toggled to float and dragged/resized freely within screen bounds.
+Minimal BSP/dwindle tiling window manager for X11. Each new window bisects the focused tile, 
+alternating split orientation based on aspect ratio — matching Hyprland's dwindle behavior. 
+Windows can be toggled to float and dragged/resized freely within screen bounds.
 
 ## Dependencies
 
@@ -14,7 +16,7 @@ Gentoo: `x11-libs/libX11` (usually already present)
 ## Build
 
 ```sh
-git clone https://github.com/yourname/vex
+git clone https://github.com/woodeater10/vex
 cd vex
 make
 ```
@@ -67,4 +69,7 @@ bind = mod+shift+Return = alacritty
 
 ## Layout
 
-New windows always split the focused tile. If the tile is wider than tall, it splits horizontally (side by side); otherwise vertically (top/bottom). This mirrors Hyprland's dwindle layout. Use `mod+v` to flip the active split, `mod+h`/`mod+l` to adjust the ratio.
+New windows always split the focused tile. 
+If the tile is wider than tall, it splits horizontally (side by side); 
+otherwise vertically (top/bottom). This mirrors Hyprland's dwindle layout. 
+Use `mod+v` to flip the active split, `mod+h`/`mod+l` to adjust the ratio.
