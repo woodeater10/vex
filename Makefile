@@ -8,8 +8,8 @@ $(BIN): $(SRC)
 	$(CC) $(CFLAGS) -o $(BIN) $(SRC) $(LDFLAGS)
 
 install: $(BIN)
-	install -Dm755 $(BIN)       /usr/local/bin/$(BIN)
-	install -Dm644 config.conf  /etc/vex/config.conf
+	install -Dm755 $(BIN)      /usr/local/bin/$(BIN)
+	install -Dm644 config.conf /etc/vex/config.conf
 
 uninstall:
 	rm -f /usr/local/bin/$(BIN)
